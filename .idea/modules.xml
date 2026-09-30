@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaGroupProject.iml" filepath="$PROJECT_DIR$/.idea/JavaGroupProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/THE_OMEGA/THE_OMEGA.iml" filepath="$PROJECT_DIR$/THE_OMEGA/THE_OMEGA.iml" />
     </modules>
   </component>
 </project>
