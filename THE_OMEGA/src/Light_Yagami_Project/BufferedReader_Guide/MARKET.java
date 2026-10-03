@@ -15,7 +15,6 @@ public class MARKET {
                 System.out.print("HOW MANY COFFEE?: ");
                 String coffeeOrder = in.readLine();
 
-                // Check for empty BEFORE parsing
                 if (breadOrder.isEmpty() || coffeeOrder.isEmpty()) {
                     System.out.println("You must enter a number.");
                     continue;
