@@ -53,6 +53,7 @@ public class MARKET {
                     System.out.println("change: " + sukli);
                     break;
                 } else {
+
                     System.out.println("Not enough payment. Need: " + paymentWService);
                 }
 
