@@ -9,6 +9,7 @@ public class Cinema_Ticket {
                 new InputStreamReader(System.in)
         );
 
+
         double rTicketPrice = 12.00;
         double vTicketPrice = 20.00;
         double popcornPrice = 5.00;
