@@ -15,7 +15,7 @@ public class quizbutjoptionPAIN {
         JOptionPane.showMessageDialog(null, "ok bradar.. how many pastries bradar", "", JOptionPane.PLAIN_MESSAGE);
         String pastriesinput = JOptionPane.showInputDialog("");
         double pastriesbradar = Double.parseDouble(pastriesinput);
-        JOptionPane.showMessageDialog(null, "ok bradar.. so a total of " + thisremovesthething.format(coffeesbradar) + " and " + thisremovesthething.format(pastriesbradar) + " bradar..",
+        JOptionPane.showMessageDialog(null, "ok bradar.. so a total of " + thisremovesthething.format(coffeesbradar) + " coffees and " + thisremovesthething.format(pastriesbradar) + " pastries bradar..",
                 "", JOptionPane.PLAIN_MESSAGE);
 
         double coffeehowmuchall = coffeesbradar * coffeeprice;
