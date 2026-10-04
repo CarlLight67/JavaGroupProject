@@ -39,6 +39,8 @@ public class quizbutjoptionPAIN {
             double realbillactually = howmuch - taxedbills;
             JOptionPane.showMessageDialog(null, " ok bradar your change is " + realbillactually + "...",
                     "", JOptionPane.PLAIN_MESSAGE);
+            JOptionPane.showMessageDialog(null, " bradar plz buy from our shop again bradar. i love you ",
+                    "", JOptionPane.PLAIN_MESSAGE);
         }
     }
 }
