@@ -1,8 +1,11 @@
 import java.util.*;
+import java.text.*; //for decimal format only doesnt really matter
 
 public class testngquiz {
     public static void main(String[] args) {
         Scanner bayag = new Scanner(System.in);
+        DecimalFormat df = new DecimalFormat("#.##");
+        // tol pampa etuc lang to namaoy lang ako ksi may .0 sa kung ilang kape at pastry dont mind it haha kaw bahala kung gusto mo
 
         double tanginakape = (80.00);
         double pastrytolputangina = (50.00);
@@ -24,7 +27,7 @@ public class testngquiz {
         double taxnatintangina = bayad * taxparanggago;
         double totoongpresyo = bayad + taxnatintangina;
 
-        System.out.println("ok so " + ganokadamiyungkape + " na kape at " + ganokadamiyungpastry + " na pastry..");
+        System.out.println("ok so " + df.format(ganokadamiyungkape) + " na kape at " + df.format(ganokadamiyungpastry) + " na pastry..");
         System.out.println("tol mga " + sumngkape +" sa kape " + "tas " + sumngpastry + " sa pastry.. so bale ");
         System.out.println("mga " + bayad + " ibabayad mo. ");
         System.out.println("magkano bigay mo saken???");
