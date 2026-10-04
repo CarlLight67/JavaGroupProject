@@ -41,7 +41,7 @@ public class testngquiz {
         } else {
             System.out.println("oki so mga " + baliknapera + " ang sukle natin bossing..");
             System.out.println("may 5% tax yah.. eto mga " + taxnatintangina + " petot");
-            System.out.println("sensya na boss may tax kasi tayo. eto talaga yung kung magkano haha,, " + totoongpresyo);
+            System.out.println("sensya na boss may tax kasi tayo. eto talaga yung kung magkano at babayadan mo haha,, " + totoongpresyo);
             double totoongbalik = bigay - totoongpresyo;
             System.out.println("ok ang balik is.. " + totoongbalik);
             System.out.println("sana masaya ka na");
