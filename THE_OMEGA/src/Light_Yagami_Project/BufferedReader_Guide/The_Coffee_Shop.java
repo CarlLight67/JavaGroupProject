@@ -68,6 +68,7 @@ public class The_Coffee_Shop {
                     System.out.println("TOTAL WITH VAT: " + total);
                 }
 
+
                 System.out.print("Payment: ");
                 String Rpayment = input.readLine().trim();
                 double payment = Double.parseDouble(Rpayment);
