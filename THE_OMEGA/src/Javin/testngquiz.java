@@ -15,10 +15,10 @@ public class testngquiz {
         double ganokadamiyungpastry;
         double bigay;
 
-        System.out.println("tol ilang kape..");
+        System.out.print("tol ilang kape..: ");
         ganokadamiyungkape = bayag.nextDouble() ;
 
-        System.out.println("tol ilang pastry..");
+        System.out.print("tol ilang pastry..: ");
         ganokadamiyungpastry = bayag.nextDouble();
 
         double sumngkape = tanginakape * ganokadamiyungkape;
