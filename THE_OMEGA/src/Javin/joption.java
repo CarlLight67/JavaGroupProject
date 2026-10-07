@@ -8,7 +8,7 @@ public class joption {
        pangalan2 = JOptionPane.showInputDialog("kulet ampota ilagay mo nalang");
         String pangalaners = "ikaw ba tong tangang si " + pangalan + "." +
                 " kulit nampotangina paulit ulit pa ksi ikaw pla tlaga si " + pangalan2 + "." + " para kang bisaya tangina mo" + "";
-        String pangalan 3 = "";
+        String pangalan  3 = "";
         pangalan3  = JOptionPane.showInputDialog("lagay mo pangalan mo tanga");
         JOptionPane.showMessageDialog(null, pangalaners, "Title Bar", JOptionPane.ERROR_MESSAGE);
 
