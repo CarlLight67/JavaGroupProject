@@ -1,5 +1,5 @@
 package Light_Yagami_Project.YTVideoDownloader;
-
+// REMEMBER THAT YOU MUST HAVE THE FILE OF "yt-dlp.exe" BEFORE USING THIS TOOL
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
