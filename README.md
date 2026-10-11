@@ -557,12 +557,3 @@ public class CinemaTicket {
 | Handle error | `try-catch` | `try { } catch { }` |
 
 ---
-
-## 🎯 WHICH SECTION DO YOU NEED MOST HELP WITH?
-
-Let me know:
-1. Which level is hardest for you?
-2. Which concept from the checklist is confusing?
-3. Do you want more examples for specific topics?
-
-I can create detailed, step-by-step tutorials for any topic!
