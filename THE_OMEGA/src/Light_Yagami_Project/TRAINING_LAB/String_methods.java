@@ -27,34 +27,47 @@ public class String_methods {
 
         try {
             int numberOfStaffs = 0;
-            while(true){
+            while(true) {
 
                 System.out.println("this is not must be greater or equal that 50");
                 System.out.print("ENTER THE VALUE THAT CAN ENTER IN THE ROOM: ");
-
                 String rawStuff = input.readLine().trim();
 
-                if(rawStuff.isEmpty()){
+
+                if (rawStuff.isEmpty()) {
                     System.out.println("this not be empty");
+                    System.out.print("ENTER THE VALUE THAT CAN ENTER IN THE ROOM: ");
                     rawStuff = input.readLine();
                     continue;
                 }
 
                 int getStaffNumber = Integer.parseInt(rawStuff);
 
-                if(getStaffNumber <= 0){
+                if (getStaffNumber <= 0) {
                     System.out.println("THIS MUST NOT BE NEGATIVE OR 0");
-                }
-                else if(getStaffNumber >  50){
+                } else if (getStaffNumber > 50) {
                     continue;
-                }
-
-                else {
+                } else {
                     String[] student = new String[getStaffNumber];
-                    System.out.print("This is the total number availability of staff that can enter: " + student.length);
+                    System.out.print("""
+                            
+                            This is the total number availability of staff that can enter: """ + "" + student.length);
+                    System.out.println();
+
+                    for(int p = 0; p < student.length; p++){
+                        System.out.print("ENTER THE STUDENT NAMES: ");
+                        student[p] = input.readLine();
+                    }
+                    System.out.println("""
+                            
+                            
+                            
+                            """);
+                    for(String n : student){
+                        System.out.println(n);
+                    }
                     break;
                 }
-
             }
 
         }catch(Exception e){
