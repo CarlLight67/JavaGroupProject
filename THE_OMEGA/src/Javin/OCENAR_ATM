@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class OCENAR_ATM {
+    public static void main(String[] args) {
+        Scanner ATM = new Scanner(System.in);
+
+        double balance = 1000.00;
+
+        System.out.println(" == ATM == ");
+        System.out.println("1 - Balance");
+        System.out.println("2 - Deposit");
+        System.out.println("3 - Withdraw");
+        System.out.print("Choose an option: ");
+
+        int thechoice = ATM.nextInt();
+
+        if (thechoice == 1) {
+            System.out.println("Your balance is " + balance + "₽");
+
+        } else if (thechoice == 2) {
+            System.out.println("How much will you deposit?");
+            double depositmoney = ATM.nextInt();
+            if (depositmoney > 0) {
+                balance += depositmoney;
+                System.out.println("You have deposited an amount of " + depositmoney + ".");
+                System.out.println("Your new balance is " + balance + ".");
+            } else {
+                System.out.println("Invalid amount!");
+            }
+
+        } else if (thechoice == 3) {
+            System.out.println("How much will you withdraw?");
+            int withdrawmoney = ATM.nextInt();
+            
+            if (withdrawmoney > balance) {
+                System.out.println("Error! Insufficient funds");
+            } else if (withdrawmoney > 0) {
+                balance -= withdrawmoney;
+                System.out.println("You have withdrawn an amount of " + withdrawmoney + ".");
+                System.out.println("Your new balance is " + balance + ".");
+            } else {
+                System.out.println("Invalid amount!");
+            }
+
+        } else {
+            System.out.println("Invalid! Please select options 1-3.");
+        }
+
+
+    }
+}
