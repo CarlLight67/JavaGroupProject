@@ -5,13 +5,19 @@ public class joptionatmwithapin {
 
         String pinnumber = JOptionPane.showInputDialog(null,
                 "Please create your pin number.", "WELCOME TO VINJAVINBANKS", JOptionPane.PLAIN_MESSAGE);
-
-        String inputPin = JOptionPane.showInputDialog(null, "Enter PIN: ", "Login", JOptionPane.QUESTION_MESSAGE);
+        if (pinnumber.matches("\\d{6}")) {
+        } else {
+            JOptionPane.showMessageDialog(null, "Wrong format!");
+            return;
+        }
+        String inputPin = JOptionPane.showInputDialog(null, "Enter your 6 digit PIN: ", "Login", JOptionPane.QUESTION_MESSAGE);
 
         if (inputPin.equals(pinnumber)) {
         } else {
-            JOptionPane.showMessageDialog(null, "Wrong PIN!");
+            JOptionPane.showMessageDialog(null, "Wrong pin!");
+            return;
         }
+
 
         double mybalance = 1000.0;
 
