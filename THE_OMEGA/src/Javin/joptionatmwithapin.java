@@ -44,7 +44,9 @@ public class joptionatmwithapin {
         } else if (choice == 3) {
             String withdraw = JOptionPane.showInputDialog(null, "", "How much will you withdraw?", JOptionPane.QUESTION_MESSAGE);
             int withdrawers = Integer.parseInt(withdraw);
-            if (withdrawers > 0) {
+            if (withdrawers > mybalance) {
+                JOptionPane.showMessageDialog(null, "Error! Insufficient funds!");
+            } else if (withdrawers > 0) {
                 mybalance -= withdrawers;
                 JOptionPane.showMessageDialog(null, "Your have withdrawn an amount of" + withdraw + "₱" + ".");
                 JOptionPane.showMessageDialog(null, "Your new balance is " + mybalance + "₱" + ".");
