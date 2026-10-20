@@ -61,7 +61,7 @@ public class String_ATM {
                System.out.println(show + balance);
            }
 
-           }
+           }    
 
        }
        else if (getInput.equalsIgnoreCase("99")) { // user exit
