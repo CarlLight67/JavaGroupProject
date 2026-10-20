@@ -1,7 +1,9 @@
 import javax.swing.*;
+import java.text.DecimalFormat;
 
 public class vendingmachineinjoption {
     public static void main(String[] args) {
+        DecimalFormat money = new DecimalFormat("0.00");
 
         double credit = 0.00;
         do {
@@ -20,7 +22,7 @@ public class vendingmachineinjoption {
                     JOptionPane.showMessageDialog(null, "Invalid amount!", "", JOptionPane.ERROR_MESSAGE);
                 } else {
                     credit += amountofmoney;
-                    JOptionPane.showMessageDialog(null, "Your new balance is " + credit + ".", "", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Your new balance is " + money.format(credit) + ".", "", JOptionPane.INFORMATION_MESSAGE);
                 }
             } else if (choice == 2) {
                 String snacks = JOptionPane.showInputDialog(null, "Please choose between these snacks."
@@ -37,17 +39,17 @@ public class vendingmachineinjoption {
                     price = 1.25;
                 }
                 if (price == 0) {
-                    JOptionPane.showMessageDialog(null, "Invalid option!" + credit + ".", "", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Invalid option!" + money.format(credit) + ".", "", JOptionPane.ERROR_MESSAGE);
                 } else if (credit >= price) {
                     credit -= price;
-                    JOptionPane.showMessageDialog(null, "Your new balance is " + credit + ". Thank you for shopping with us!", "", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Your new balance is " + money.format(credit) + ". Thank you for shopping with us!", "", JOptionPane.ERROR_MESSAGE);
                 } else {
-                    JOptionPane.showMessageDialog(null, "Invalid. You need a total of " + (price - credit) + " to buy this item.", "", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Invalid. You need a total of " + money.format(price - credit) + " to buy this item.", "", JOptionPane.ERROR_MESSAGE);
                 }
                 } else if (choice == 3) {
-                JOptionPane.showMessageDialog(null, "You have a total of " + credit + " credits.", "", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "You have a total of " + money.format(credit) + " credits.", "", JOptionPane.ERROR_MESSAGE);
                 } else if (choice == 4) {
-                JOptionPane.showMessageDialog(null, "You have a total of " + credit + " change. Thank you for using the Vending Machine! <3", "", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "You have a total of " + money.format(credit) + " change. Thank you for using the Vending Machine! <3", "", JOptionPane.ERROR_MESSAGE);
             }
 
             } while (true);
