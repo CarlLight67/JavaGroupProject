@@ -9,7 +9,7 @@ public class MiniMarket {
         System.out.print("ENTER YOUR AGE: ");
         int age = input.nextInt();
 
-        // Rule 1: Age Check
+
         if (age < 18) {
             System.out.println("""
 
@@ -27,7 +27,7 @@ public class MiniMarket {
 
         System.out.print("ARE YOU A STUDENT (YES OR NO)?: ");
         String askStudent = input.next();
-
+ 
         System.out.print("HOW MANY TICKETS DO YOU WANT TO BUY?: ");
         int tickets = input.nextInt();
 
